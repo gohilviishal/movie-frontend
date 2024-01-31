@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(210, 29%, 24%);
+}
+
+.form {
+  padding: 40px;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80px;
+}
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 300px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 0px;
+  background: var(--input-color, #224957);
+  padding: 20px;
+  color: #fff;
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.input::placeholder {
+  color: #fff;
+}
+.rememberMe {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 17px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: var(--input-color, #224957);
+  margin-right: 10px;
+}
+
+.button {
+  border-radius: 10px;
+  border: 0px;
+  background: var(--primary, #2bd17e);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* padding: 5px 126px; */
+}
+
+.submitText {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+}

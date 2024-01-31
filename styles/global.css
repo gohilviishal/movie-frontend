@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80px;
+}
+
+.containerMovie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #093545;
+  min-height: 100vh;
+}
+
+.input {
+  width: 300px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 0px;
+  background: var(--input-color, #224957);
+  padding: 20px;
+  color: #fff;
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.input::placeholder {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.rememberMeText {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.submitText {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 1000;
+}
+
+.textMontserrat {
+  font-family: Montserrat;
+}
+
+.button {
+  border-radius: 10px;
+  border: 0px;
+  background: var(--primary, #2bd17e);
+  width: 100%;
+}
+
+.paginationBtn {
+  border-radius: 4px;
+  border: 0;
+  background: #092c39;
+}
+
+.paginationBtnActive {
+  border-radius: 4px;
+  border: 0;
+  background: var(--Primary, #2bd17e);
+}
+
+.simpleBtn {
+  background: transparent;
+  border: 0;
+}
+
+.cancelBtn {
+  border-radius: 10px;
+  border: 0.5px solid white;
+  background: var(--primary, transparent);
+  width: 100%;
+}
+
+.dropzone {
+  width: 473px;
+  height: 504px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px dashed #fff;
+  background: var(--input-color, #224957);
+}
+
+.dropzone p {
+  text-align: center;
+  cursor: pointer;
+}
+
+.inputField {
+  width: 362px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--input-color, #224957);
+  margin-top: 10px;
+}
+
+.grid-box {
+  display: -ms-grid;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-item {
+  background: #092c39;
+  backdrop-filter: blur(100px);
+  padding: 8px 8px 16px 8px;
+  border-radius: 12px;
+
+  .content {
+    padding: 0 8px;
+  }
+}
+
+.movie-img {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.movie-img img {
+  border-radius: 12px;
+  min-height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+h2.title {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+.year {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .grid-box {
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .movie-img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .grid-box {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .grid-box {
+    gap: 15px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.head-block {
+  margin-bottom: 120px;
+  color: #fff;
+}
+.movie-add {
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+}
+
+.logout {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}

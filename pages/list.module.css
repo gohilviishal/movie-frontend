@@ -1,0 +1,69 @@
+.grid-box {
+  display: -ms-grid;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-item {
+  background: #092c39;
+  backdrop-filter: blur(100px);
+  padding: 8px 8px 16px 8px;
+  border-radius: 12px;
+
+  .content {
+    padding: 0 8px;
+  }
+}
+
+.movie-img {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.movie-img img {
+  border-radius: 12px;
+  min-height: 400px;
+  object-fit: cover;
+}
+h2.title {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+.year {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .grid-box {
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .movie-img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .grid-box {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .grid-box {
+    gap: 15px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
